@@ -1,0 +1,31 @@
+# Comandos Git
+
+## Configuração
+git config --global user.name "Seu Nome"
+git config --global user.email "seu.email@example.com"
+
+## Inicializar e Clonar Repositórios
+git init
+git clone <url-do-repositorio>
+
+## Gerenciar Alterações
+git add <arquivo>
+git add . # Adiciona todos os arquivos modificados
+git commit -m "Mensagem do commit"
+git status
+git diff
+
+## Branches
+git branch # Lista todas as branches
+git branch <nome-da-branch> # Cria uma nova branch
+git checkout <nome-da-branch> # Troca para a branch especificada
+git merge <nome-da-branch> # Mescla uma branch na branch atual
+git branch -d <nome-da-branch> # Deleta uma branch
+
+## Sincronização com o Repositório Remoto
+git push origin <nome-da-branch>
+git pull origin <nome-da-branch>
+
+## Reverter Alterações
+git reset --hard <commit> # Reverte para um commit específico
+git revert <commit> # Cria um novo commit que desfaz as alterações de um commit anterior
