@@ -1,4 +1,7 @@
-FROM node:14
-
+FROM node:18.19.1
 WORKDIR /app
-COPY packet
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 80
+CMD [ "npm", "start" ]
