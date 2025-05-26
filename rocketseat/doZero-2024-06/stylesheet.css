@@ -41,7 +41,14 @@ a:hover {
 }
 
 #bg-image {
-    background-image: url("https: //images.pexels.com/photos/2098134/pexels-photo-2098134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-image: url("https://raw.githubusercontent.com/rocketseat-content/doZero-2024-06/main/assets/bg-image.png");
+    background-image: linear-gradient(to bottom, rgba(46, 35, 35, 0.5), rgba(0, 0, 0, 0.5)), url("https://raw.githubusercontent.com/rocketseat-content/doZero-2024-06/main/assets/bg-image.png");
+    background-color: black;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-size: cover;
 
     background-position: center;
     background-size: contain;
